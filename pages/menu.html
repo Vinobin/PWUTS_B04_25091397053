@@ -1,0 +1,70 @@
+<section class="page-title">
+  <p class="eyebrow">MENU KANTINKITA</p>
+  <h1>Makan enak, kantong aman</h1>
+  <p>
+    Temukan makanan favoritmu. Gunakan pencarian, kategori, dan urutkan
+    berdasarkan harga
+  </p>
+</section>
+<section class="catalog-layout" aria-label="Katalog makanan dan minuman">
+  <div class="catalog-controls">
+    <label class="field-search" for="search"
+      ><span aria-hidden="true">⌕</span
+      ><input
+        id="search"
+        type="search"
+        placeholder="Cari nasi, mie, minuman..."
+        autocomplete="off"
+      /><span class="sr-only">Pencarian menu</span></label
+    >
+    <label class="sort-control" for="sort"
+      >Urutkan
+      <select id="sort">
+        <option value="default">Rekomendasi</option>
+        <option value="low">Harga termurah</option>
+        <option value="high">Harga termahal</option>
+      </select>
+    </label>
+  </div>
+  <div class="filter-row" aria-label="Filter kategori">
+    <button
+      type="button"
+      class="filter-chip selected"
+      data-category="Semua"
+      aria-pressed="true"
+    >
+      Semua menu
+    </button>
+    <button
+      type="button"
+      class="filter-chip"
+      data-category="Makanan"
+      aria-pressed="false"
+    >
+      Makanan
+    </button>
+    <button
+      type="button"
+      class="filter-chip"
+      data-category="Minuman"
+      aria-pressed="false"
+    >
+      Minuman
+    </button>
+    <button
+      type="button"
+      class="filter-chip"
+      data-category="Camilan"
+      aria-pressed="false"
+    >
+      Camilan
+    </button>
+  </div>
+  <div class="catalog-heading">
+    <p id="result-count" role="status">Memuat menu…</p>
+    <a class="text-link" href="#pesan"
+      >Buka keranjang (<span id="cart-inline-count">0</span>) →</a
+    >
+  </div>
+  <div id="menu-list" class="cards"></div>
+</section>

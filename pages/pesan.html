@@ -1,0 +1,112 @@
+<section class="page-title">
+  <p class="eyebrow">TINGGAL SELANGKAH LAGI</p>
+  <h1>Siapkan makan siangmu</h1>
+  <p>Periksa pilihanmu, lalu lengkapi data pemesanan</p>
+</section>
+<div class="checkout">
+  <section class="form-panel">
+    <div class="panel-heading">
+      <span class="panel-icon" aria-hidden="true">✎</span>
+      <div>
+        <h2>Data pemesan</h2>
+        <p>Isi semua kolom, Catatan opsional</p>
+      </div>
+    </div>
+    <form id="order-form" method="post" action="#" novalidate>
+      <div class="field">
+        <label for="nama">Nama lengkap <span aria-hidden="true">*</span></label
+        ><input
+          id="nama"
+          name="nama"
+          autocomplete="name"
+          maxlength="100"
+          required
+          placeholder="Nama pemesan"
+        /><small class="error" id="nama-error"></small>
+      </div>
+      <div class="field">
+        <label for="email">Alamat email <span aria-hidden="true">*</span></label
+        ><input
+          id="email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          maxlength="150"
+          required
+          placeholder="nama@email.com"
+        /><small class="error" id="email-error"></small>
+      </div>
+      <div class="field">
+        <label for="jenis_pengguna"
+          >Kategori pengguna <span aria-hidden="true">*</span></label
+        ><select id="jenis_pengguna" name="jenis_pengguna" required>
+          <option value="">Pilih kategori</option>
+          <option value="Mahasiswa">Mahasiswa</option>
+          <option value="Dosen">Dosen</option>
+          <option value="Staf">Staf</option>
+          <option value="Satpam">Satpam</option>
+          <option value="Lainnya">Lainnya</option></select
+        ><small class="error" id="jenis_pengguna-error"></small>
+      </div>
+      <div class="field">
+        <label for="metode_pembayaran"
+          >Metode pembayaran <span aria-hidden="true">*</span></label
+        ><select id="metode_pembayaran" name="metode_pembayaran" required>
+          <option value="">Pilih metode pembayaran</option>
+          <option value="tunai">Tunai di kantin</option>
+          <option value="transfer">Transfer bank (belum otomatis)</option>
+          <option value="qris">QRIS (belum otomatis)</option></select
+        ><small class="error" id="metode_pembayaran-error"></small>
+      </div>
+      <div class="field">
+        <label for="catatan"
+          >Catatan pesanan <span class="muted">(opsional)</span></label
+        ><textarea
+          id="catatan"
+          name="catatan"
+          rows="3"
+          maxlength="200"
+          placeholder="Contoh: sambal dipisah, tanpa es..."
+        ></textarea
+        ><small class="muted">Maksimal 200 karakter</small
+        ><small class="error" id="catatan-error"></small>
+      </div>
+      <label class="check"
+        ><input
+          id="setuju"
+          type="checkbox"
+          name="setuju"
+          value="1"
+          required
+        /><span>Saya sudah memeriksa data dan pesanan</span></label
+      ><small class="error" id="setuju-error"></small>
+      <p id="form-message" role="alert" class="form-message"></p>
+      <button class="button full" type="submit">Buat pesanan →</button>
+    </form>
+  </section>
+  <aside class="cart-panel">
+    <div class="panel-heading">
+      <span class="panel-icon" aria-hidden="true">▤</span>
+      <div>
+        <p class="eyebrow">CEK SEBELUM PESAN</p>
+        <h2>Ringkasan pesanan</h2>
+      </div>
+    </div>
+    <div id="cart"></div>
+    <a class="text-link" href="#menu">← Tambah menu lainnya</a>
+    <div class="notice">
+      <strong>Info pembayaran</strong>
+      <p>
+        Untuk pembayaran tunai, silakan bayar di kantin saat mengambil pesanan.
+        Untuk pembayaran transfer atau QRIS, harap tunggu konfirmasi manual dari
+        admin.
+    </div>
+  </aside>
+</div>
+<section
+  id="receipt"
+  class="receipt"
+  hidden
+  tabindex="-1"
+  aria-label="Bukti pemesanan"
+></section>

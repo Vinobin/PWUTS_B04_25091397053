@@ -1,0 +1,11 @@
+[
+  {"id_menu":1,"nama_menu":"Nasi Ayam Sambal","deskripsi":"Ayam gurih, nasi hangat, lalapan dan sambal khas kantin.","kategori":"Makanan","harga":15000,"gambar":"assets/images/ayam.svg","stok":24},
+  {"id_menu":2,"nama_menu":"Nasi Goreng Kampus","deskripsi":"Nasi goreng spesial dengan telur dan kerupuk renyah.","kategori":"Makanan","harga":12000,"gambar":"assets/images/nasi.svg","stok":18},
+  {"id_menu":3,"nama_menu":"Mie Ayam Pangsit","deskripsi":"Mie kenyal, ayam manis gurih, dan pangsit renyah.","kategori":"Makanan","harga":13000,"gambar":"assets/images/mie.svg","stok":20},
+  {"id_menu":4,"nama_menu":"Bakso Kuah","deskripsi":"Bakso sapi dan mi dalam kaldu hangat berempah.","kategori":"Makanan","harga":14000,"gambar":"assets/images/bakso.svg","stok":14},
+  {"id_menu":5,"nama_menu":"Es Teh Manis","deskripsi":"Teh segar dengan es batu, cocok untuk cuaca kampus.","kategori":"Minuman","harga":4000,"gambar":"assets/images/teh.svg","stok":35},
+  {"id_menu":6,"nama_menu":"Es Jeruk Segar","deskripsi":"Perasan jeruk manis-asam yang menyegarkan.","kategori":"Minuman","harga":6000,"gambar":"assets/images/jeruk.svg","stok":25},
+  {"id_menu":7,"nama_menu":"Kopi Susu","deskripsi":"Perpaduan kopi dan susu yang lembut.","kategori":"Minuman","harga":8000,"gambar":"assets/images/kopi.svg","stok":16},
+  {"id_menu":8,"nama_menu":"Pisang Goreng","deskripsi":"Pisang goreng keemasan, cocok untuk teman belajar.","kategori":"Camilan","harga":7000,"gambar":"assets/images/pisang.svg","stok":12},
+  {"id_menu":9,"nama_menu":"Roti Bakar Cokelat","deskripsi":"Roti hangat dengan isi cokelat yang lumer.","kategori":"Camilan","harga":9000,"gambar":"assets/images/roti.svg","stok":15}
+]
